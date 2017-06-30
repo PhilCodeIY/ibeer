@@ -29,11 +29,10 @@ img{
 }
 .wrapper{
     width: 1000px;
-   margin: auto;
-   /* display: flex;
-
-  align-items: center;
-  justify-content: center; */
+    flex-wrap: wrap;
+   display: flex;
+  justify-content: center; 
+  margin: auto;
     /*
         TODO: 
         - Center up the page
@@ -46,7 +45,7 @@ img{
         TODO
         - Flexbox property here
     */
-
+width: 1000px;
     
 }
 #site-header div{
@@ -62,6 +61,7 @@ img{
 
     background-size: cover;
     background-position: right bottom;
+
 }
 #site-header div h1,
 #site-header div h3{
@@ -127,17 +127,26 @@ main{
     */
 
     flex-wrap: wrap;
+    width: 700px;
+    margin-top: -60px;
 }
 aside{
     padding: 20px;
     background-color: #eee;
     box-shadow: 5px 5px 8px rgba( 0, 0, 0, 0.3 );
+    width: 180px;
+    
     /*
         TODO: 
         - Flexbox: Set the starting width of this element
         - Use relative positioning to bump this upward
     */
-    fle
+
+    position: relative;
+    flex-direction: column;
+    margin-top: -60px;
+    
+    
 }
 aside h3{
     text-align: center;
@@ -149,12 +158,15 @@ aside img{
     border-radius: 50%;
     margin-bottom: 30px;
     border: 2px solid white;
+    flex-basis: auto;
+
 }
 article{
     background-color: white;
     box-shadow: -5px 5px 8px rgba( 0, 0, 0, 0.3 );
     padding: 20px;
     margin-bottom: 20px;
+
 }
 article h2{
     line-height: 1em;
@@ -178,6 +190,9 @@ article img{
         - Float article images to the right
         and match sizes and spacing to the mockup
     */
+    float: right;
+    height: 200px;
+
 }
 article footer p{
     /*
@@ -185,6 +200,8 @@ article footer p{
         - Style the article footer
         HINT: Look to the article header;
     */
+    font-family: Josefin Sans, Noto Serif;
+    /*margin-top: 60px; */
 }
 #site-footer{
     
@@ -193,6 +210,11 @@ article footer p{
         TODO: 
         - Style the site footer
     */
+color: white;
+text-align: center;
+margin-top: 20px;
+line-height: 60px;
+
 }
 
 
